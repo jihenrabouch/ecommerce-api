@@ -1,40 +1,84 @@
-🚀 Mon projet de stage : Simplified E-Commerce Product Management System
+🛍️ E-commerce API
 
-Pendant mon stage d’un mois en développement web, j’ai eu l’opportunité de développer un système simplifié de gestion de produits e-commerce en utilisant :
-Spring Boot pour le backend, Angular pour le frontend et MySQL pour la base de données.
+Ce projet est le **backend** d’une application e-commerce.  
+Il est développé avec **Spring Boot** et expose une API REST permettant la gestion des produits, utilisateurs et commandes.
 
-💡 Objectif du projet :
-Créer une application web permettant aux administrateurs de gérer les produits via des opérations CRUD (Create, Read, Update, Delete), avec un système simple de catégories.
+ 🚀 Technologies utilisées
+- Java 17+
+- Spring Boot 3
+- Spring Data JPA
+- MySQL
+- Maven
+- Spring Security (optionnel)
 
-🛠️ Fonctionnalités principales :
+ 📂 Structure du projet
+- `src/main/java` → Code source
+- `src/main/resources/application.properties` → Configuration (base de données, etc.)
+- `pom.xml` → Dépendances Maven
 
-Gestion des produits : création, lecture, modification, suppression
+ ⚙️ Installation & exécution
+1. **Cloner le dépôt**
+   ```bash
+   git clone https://github.com/jihenrabouch/ecommerce-api.git
+   cd ecommerce-api
+Configurer la base de données MySQL
+Crée une base de données ecommerce :
 
-Attribution des produits à des catégories simples (Électronique, Vêtements, Livres)
+sql
+Copier le code
+CREATE DATABASE ecommerce;
+Mets à jour src/main/resources/application.properties :
 
-Interface utilisateur simple pour visualiser et éditer les produits
+properties
+Copier le code
+spring.datasource.url=jdbc:mysql://localhost:3306/ecommerce
+spring.datasource.username=root
+spring.datasource.password=ton_mot_de_passe
+Lancer l’application
 
-API REST basique pour la communication frontend-backend
+bash
+Copier le code
+mvn spring-boot:run
+📡 Endpoints principaux
+GET /api/products → Liste des produits
 
-📚 Compétences et apprentissages :
+POST /api/products → Ajouter un produit
 
-Création d’API REST avec Spring Boot
+PUT /api/products/{id} → Modifier un produit
 
-Gestion de la base de données MySQL et relations simples
+DELETE /api/products/{id} → Supprimer un produit
+Configurer la base de données MySQL
+Crée une base de données ecommerce :
 
-Communication frontend-backend avec Angular et HttpClient
-
-Gestion de formulaires et navigation dans Angular
-
-🔗 Aperçu technique :
-
-Backend : Spring Boot avec ProductController, ProductService, ProductRepository
-
-Frontend : Angular avec ProductListComponent, ProductFormComponent et ProductService
-
-Base de données : tables products et categories avec relations simples
-
-✅ Ce projet m’a permis d’acquérir une expérience pratique en développement full-stack et de comprendre l’intégration complète d’une application web, même dans un délai court.
+CREATE DATABASE ecommerce;
 
 
-#FullStack #SpringBoot #Angular #MySQL #Ecommerce #Stage #DéveloppementWeb #CRUD
+Mets à jour src/main/resources/application.properties :
+
+spring.datasource.url=jdbc:mysql://localhost:3306/ecommerce
+spring.datasource.username=root
+spring.datasource.password=ton_mot_de_passe
+
+
+Lancer l’application
+
+mvn spring-boot:run
+
+📡 Endpoints principaux
+
+GET /api/products → Liste des produits
+
+POST /api/products → Ajouter un produit
+
+PUT /api/products/{id} → Modifier un produit
+
+DELETE /api/products/{id} → Supprimer un produit
+
+🔗 Lien associé
+
+Frontend : https://github.com/jihenrabouch/ecommerce-frontend
+
+
+
+🔗 Lien associé
+Frontend : ecommerce-frontend
