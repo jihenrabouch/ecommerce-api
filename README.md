@@ -36,6 +36,5 @@ Base de données : tables products et categories avec relations simples
 
 ✅ Ce projet m’a permis d’acquérir une expérience pratique en développement full-stack et de comprendre l’intégration complète d’une application web, même dans un délai court.
 
-📸 Aperçu de l’application : (ajoute ici 2-3 captures d’écran : page d’accueil, liste de produits, formulaire de création)
 
 #FullStack #SpringBoot #Angular #MySQL #Ecommerce #Stage #DéveloppementWeb #CRUD
