@@ -80,5 +80,4 @@ Frontend : https://github.com/jihenrabouch/ecommerce-frontend
 
 
 
-🔗 Lien associé
-Frontend : ecommerce-frontend
+
