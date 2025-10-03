@@ -31,7 +31,7 @@ Mets à jour src/main/resources/application.properties :
 
 properties
 Copier le code
-spring.datasource.url=jdbc:mysql://localhost:3306/ecommerce
+spring.datasource.url=jdbc:mysql://localhost:4200/ecommerce
 spring.datasource.username=root
 spring.datasource.password=ton_mot_de_passe
 Lancer l’application
